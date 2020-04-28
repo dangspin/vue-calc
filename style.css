@@ -10,16 +10,16 @@ body{
 
 
 #calculator{
-  margin-top:10%;
+  margin-top:8%;
   margin-left: 8%;
-  width: 300px;
+  width: 550px;
   border:1px solid #000;
   background-color: #BC8F8F;
   font-size: large;
 }
 
 .ui.input {
-  width: 298px;
+  width: 550px;
   height: 70px;
   padding: 5px;
   margin: 0px;
@@ -29,12 +29,15 @@ body{
   text-align: right;
 }
 
-/*button{
-    max-width: 200px;
+#keyboard{
+    max-width: 800px;
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row
-} */
+}
+
+button{
+  flex: 1 25%;
+}
 
 #footer{
   position: fixed;
