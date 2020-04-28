@@ -1,0 +1,49 @@
+body{
+  background-image: url("./coffee_imag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+
+#calculator{
+  margin-top:10%;
+  margin-left: 8%;
+  width: 300px;
+  border:1px solid #000;
+  background-color: #BC8F8F;
+  font-size: large;
+}
+
+.ui.input {
+  width: 298px;
+  height: 70px;
+  padding: 5px;
+  margin: 0px;
+}
+
+#input1{
+  text-align: right;
+}
+
+/*button{
+    max-width: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row
+} */
+
+#footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: gray;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: right;
+  clear: both;
+  color: white;
+}
