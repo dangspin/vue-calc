@@ -14,29 +14,74 @@ body{
   margin-left: 8%;
   width: 550px;
   border:1px solid #000;
-  background-color: #BC8F8F;
+  background-color: #FFEFD5;
   font-size: large;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .ui.input {
-  width: 550px;
+  width: 528px;
   height: 70px;
-  padding: 5px;
+  padding-top:3px;
+  padding-bottom:5px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: 0px;
 }
 
 #input1{
   text-align: right;
+  padding-right: 0px;
+  padding-left:0px;
+  margin-right: 8;
+  border-width:0;
 }
 
 #keyboard{
-    max-width: 800px;
+    margin-left: 2px;
+    margin-right: 2px;
     display:flex;
     flex-wrap: wrap;
 }
 
 button{
-  flex: 1 25%;
+
+  flex: 2 0 120px;
+}
+
+.btn{
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  height: 50px;
+  border-radius: 10px;
+  border-width: 0;
+  background-color:#ADD8E6;
+  color: #191970;
+  font-size: larger;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:nth-child(4n+4) {
+  background-color: #FF7F50;
+}
+
+.btn.equal{
+  flex-grow:44;
+  background-color: #C71585;
+  color: white;
+}
+.btn:hover {
+  border-width: 0;
+  background-color: #F5FFFA;
+}
+
+.btn:active {
+  border-width: 0;
+  outline: none;
+  background-color: #DDA0DD;
 }
 
 #footer{
