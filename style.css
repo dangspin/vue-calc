@@ -85,6 +85,12 @@ button{
   background-color: #DDA0DD;
 }
 
+.btn.equal:hover{
+  flex-grow:44;
+  background-color: #F5FFFA;
+  color: #191970;
+}
+
 #footer{
   position: fixed;
   bottom:0;

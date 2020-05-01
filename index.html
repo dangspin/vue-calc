@@ -16,23 +16,23 @@
       <div id="keyboard">
         <button class="btn num" v-on:click="clear">C</button>
         <button class="btn back">Back</button>
-        <button class="btn sqrt">Sqrt</button>
+        <button class="btn sqrt" v-on:click="Sqrt">Sqrt</button>
         <button class="btn operator" v-on:click="show('+')">+</button>
         <button class="btn num" v-on:click="show(7)">7</button>
-        <button class="btn num" v-on:click="clear">8</button>
-        <button class="btn num" v-on:click="clear">9</button>
+        <button class="btn num" v-on:click="show(8)">8</button>
+        <button class="btn num" v-on:click="show(9)">9</button>
         <button class="btn operator" v-on:click="show('-')">-</button>
-        <button class="btn num" v-on:click="clear">4</button>
-        <button class="btn num" v-on:click="clear">5</button>
-        <button class="btn num" v-on:click="clear">6</button>
-        <button class="btn operator" v-on:click="show('x')">*</button>
-        <button class="btn num" v-on:click="clear">1</button>
-        <button class="btn num" v-on:click="clear">2</button>
-        <button class="btn num" v-on:click="clear">3</button>
+        <button class="btn num" v-on:click="show(4)">4</button>
+        <button class="btn num" v-on:click="show(5)">5</button>
+        <button class="btn num" v-on:click="show(6)">6</button>
+        <button class="btn operator" v-on:click="show('*')">X</button>
+        <button class="btn num" v-on:click="show(1)">1</button>
+        <button class="btn num" v-on:click="show(2)">2</button>
+        <button class="btn num" v-on:click="show(3)">3</button>
         <button class="btn operator" v-on:click="show('/')">/</button>
-        <button class="btn num" v-on:click="clear">0</button>
-        <button class="btn num" v-on:click="clear">.</button>
-        <button class="btn equal">=</button>
+        <button class="btn num" v-on:click="show(0)">0</button>
+        <button class="btn num" v-on:click="show('.')">.</button>
+        <button class="btn equal" v-on:click="equal">=</button>
       </div>
     </div>
 
