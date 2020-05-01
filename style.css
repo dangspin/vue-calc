@@ -39,6 +39,7 @@ body{
 }
 
 #keyboard{
+    margin-top: 10px;
     margin-left: 2px;
     margin-right: 2px;
     display:flex;

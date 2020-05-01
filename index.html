@@ -11,27 +11,27 @@
     <div id="calculator">
       <div class="ui input">
         <input type="text" placeholder="Give me a number......" onfocus="this.placeholder = ''"
-        onblur="this.placeholder = 'Give me a number......'" id="input1">
+        onblur="this.placeholder = 'Give me a number......'" id="input1" v-bind:value="message">
       </div>
       <div id="keyboard">
-        <button class="btn num">C</button>
+        <button class="btn num" v-on:click="clear">C</button>
         <button class="btn back">Back</button>
         <button class="btn sqrt">Sqrt</button>
-        <button class="btn operator">+</button>
-        <button class="btn num">7</button>
-        <button class="btn num">8</button>
-        <button class="btn num">9</button>
-        <button class="btn operator">-</button>
-        <button class="btn num">4</button>
-        <button class="btn num">5</button>
-        <button class="btn num">6</button>
-        <button class="btn operator">*</button>
-        <button class="btn num">1</button>
-        <button class="btn num">2</button>
-        <button class="btn num">3</button>
-        <button class="btn operator">/</button>
-        <button class="btn num">0</button>
-        <button class="btn num">.</button>
+        <button class="btn operator" v-on:click="show('+')">+</button>
+        <button class="btn num" v-on:click="show(7)">7</button>
+        <button class="btn num" v-on:click="clear">8</button>
+        <button class="btn num" v-on:click="clear">9</button>
+        <button class="btn operator" v-on:click="show('-')">-</button>
+        <button class="btn num" v-on:click="clear">4</button>
+        <button class="btn num" v-on:click="clear">5</button>
+        <button class="btn num" v-on:click="clear">6</button>
+        <button class="btn operator" v-on:click="show('x')">*</button>
+        <button class="btn num" v-on:click="clear">1</button>
+        <button class="btn num" v-on:click="clear">2</button>
+        <button class="btn num" v-on:click="clear">3</button>
+        <button class="btn operator" v-on:click="show('/')">/</button>
+        <button class="btn num" v-on:click="clear">0</button>
+        <button class="btn num" v-on:click="clear">.</button>
         <button class="btn equal">=</button>
       </div>
     </div>
@@ -39,6 +39,6 @@
     <div id="footer">
       Copyright &copy 2020 Charlie Dang.
     </div>
-
+    <script src='./index.js' charset='utf-8' type="text/javascript"></script>
   </body>
 </html>
